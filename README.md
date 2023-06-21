@@ -1,4 +1,5 @@
 ## Pomodoro App
+
 A simple react app that serves as a productivity tool
 
 ### Features
@@ -7,5 +8,5 @@ A simple react app that serves as a productivity tool
 3. Notification ringer
 
 
-#### extras 
+#### Extras 
 Daily Motivation Quotes 
