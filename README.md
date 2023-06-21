@@ -3,7 +3,7 @@
 A simple react app that serves as a productivity tool
 
 ### Features
-1. Task bars
+1. Taskbars
 2. Clock timer
 3. Notification ringer
 
