@@ -6,13 +6,27 @@
 body{
   background-color: #30384b;
   color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main{
   padding-top: 50px;
-  max-width: 360px;
   margin: 0 auto;
   text-align: center;
+ 
+}
+
+@media (min-width: 40em) {
+  main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    gap: 10%;
+
+  }
 }
 
 button {
@@ -39,9 +53,98 @@ button.with-text svg{
   margin-right: 5px;
 }
 
-label{
+label {
   display: block;
   margin-top: 20px;
   margin-bottom: 10px;
   text-transform: capitalize;
 }
+
+.TodoWrapper {
+  background-color: #1A1A40;
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 2rem;
+  border-radius: 5px;
+
+
+  
+}
+
+.Todoform {
+  width: 100%;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #8758ff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
+}
+
+.todo-input::placeholder{
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8758ff;
+  padding: 0.75rem 1rem;
+  margin-top: 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.fa-trash{
+  margin-left: 0.75rem;
+}
+
+.completed{
+  color:#c5aeff;
+  text-decoration: line-through;
+}
+
+
+
+@media (min-width: 40em){
+  .Timer {
+    margin-left: 10px;
+    margin-top: 13%;
+    
+  }
+
+  button.with-text#back{
+    height: 40px;
+  }
+
+
+}
+
+
+@media (min-width:40em) and (max-width:64em) {
+}
+
+@media (max-width:39.9375em) {
+
+  .Timer{
+    width: 80%;
+    margin-left: 35px;
+  }
+}
+

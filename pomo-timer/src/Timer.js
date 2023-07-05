@@ -65,7 +65,7 @@ function Timer() {
   if(seconds < 10) seconds = '0'+seconds;
 
   return (
-    <div>
+    <div className='Timer'>
       <CircularProgressbar
         value={percentage}
         text={minutes + ':' + seconds}

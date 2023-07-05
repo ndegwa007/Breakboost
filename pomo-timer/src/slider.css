@@ -22,3 +22,15 @@
     background-color: var(--green);
     
 }
+
+
+@media (min-width: 40em) {
+    .slider {
+        height: 25px;
+    }
+
+    .thumb {
+        height: 25px;
+        width: 25px;
+    }
+}

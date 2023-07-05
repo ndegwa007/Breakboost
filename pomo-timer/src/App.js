@@ -4,6 +4,7 @@ import Settings from './Settings';
 import Timer from './Timer';
 import { useState } from 'react';
 import SettingsContext from './SettingsContext';
+import { TodoWrapper } from './TodoWrapper';
 
 
 function App() {
@@ -22,10 +23,11 @@ function App() {
           setBreakMinutes,
           setWorkMinutes 
         }}>
-          
+            <TodoWrapper />
           {showSettings ? <Settings /> : <Timer /> }
+        
         </SettingsContext.Provider>
-       
+      
     </main>
   );
 }
