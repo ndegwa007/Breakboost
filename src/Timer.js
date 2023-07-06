@@ -5,10 +5,13 @@ import PauseButton from "./PauseButton";
 import SettingsButton from "./SettingsButton";
 import {useContext, useState, useEffect, useRef} from "react";
 import SettingsContext from "./SettingsContext";
+import sound from './ringer/beep.wav'
+import dead from './ringer/dyingringer.mp3'
 
 const red = '#f54e4e';
 const green = '#4aec8c';
 
+ 
 function Timer() {
   const settingsInfo = useContext(SettingsContext);
 
@@ -23,6 +26,14 @@ function Timer() {
   function tick() {
     secondsLeftRef.current--;
     setSecondsLeft(secondsLeftRef.current);
+
+    if (secondsLeftRef.current < 10){
+      new Audio(sound).play();
+    }
+
+    if (secondsLeftRef.current === 0){
+      new Audio(dead).play();
+    }
   }
 
   useEffect(() => {
@@ -63,6 +74,9 @@ function Timer() {
   const minutes = Math.floor(secondsLeft / 60);
   let seconds = secondsLeft % 60;
   if(seconds < 10) seconds = '0'+seconds;
+
+  
+
 
   return (
     <div className='Timer'>
