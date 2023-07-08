@@ -23,6 +23,8 @@ function App() {
           setBreakMinutes,
           setWorkMinutes 
         }}>
+
+          <h1 className='title'>BreakBoost</h1>
             <TodoWrapper />
           {showSettings ? <Settings /> : <Timer /> }
         

@@ -2,6 +2,13 @@
     height: 40px;
     border: 2px solid var(--red);
     border-radius: 20px;
+    width: 250%;
+
+    @media (max-width:39.9375em) {
+        width: 80%;
+        position: relative;
+        left: 2%;
+    }
 }
 
 .thumb{
@@ -16,6 +23,8 @@
 
 .slider.green{
     border: 2px solid var(--green);
+    
+    text-align: center
 }
 
 .slider.green .thumb{

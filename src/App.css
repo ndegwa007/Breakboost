@@ -123,6 +123,8 @@ label {
 
 
 @media (min-width: 40em){
+
+
   .Timer {
     margin-left: 10px;
     margin-top: 13%;
@@ -137,18 +139,19 @@ label {
 }
 
 
-@media (min-width:40em) and (max-width:64em) {
-}
+
 
 @media (max-width:39.9375em) {
+
 
   .Timer{
     width: 80%;
     margin-left: 35px;
   }
 
-  .TodoWrapper{
-    
+  label{
+    position: relative;
+    left:2%;
   }
 }
 
