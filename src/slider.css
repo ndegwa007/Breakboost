@@ -6,8 +6,7 @@
 
     @media (max-width:39.9375em) {
         width: 80%;
-        position: relative;
-        left: 2%;
+        margin-left: 20px;
     }
 }
 
