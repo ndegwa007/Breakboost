@@ -14,6 +14,7 @@ function App() {
   const [breakMinutes, setBreakMinutes] = useState(15);
 
   return (
+
    
     <main>
        <SettingsContext.Provider value={{
@@ -25,11 +26,17 @@ function App() {
           setWorkMinutes 
         }}>
 
-          <Quote />
-
-          <h1 className='title'>BreakBoost</h1>
+        
             <TodoWrapper />
           {showSettings ? <Settings /> : <Timer /> }
+
+          <div className='quote'>
+
+      <h1 className='title'>BreakBoost</h1>
+          <Quote />
+
+          </div>
+
         
         </SettingsContext.Provider>
       

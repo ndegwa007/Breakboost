@@ -149,8 +149,25 @@ label {
     margin-left: 35px;
   }
 
+  .TodoWrapper{
+    padding-top: 55px;
+  }
+
   label{
     margin-left: 20px;
   }
 }
 
+
+.quote {
+  position: absolute;
+  left: 40%;
+  top:20%;
+
+
+  @media (max-width: 39.9375em) {
+    position: absolute;
+    top: 10px;
+    left: 10%;
+  }
+}
