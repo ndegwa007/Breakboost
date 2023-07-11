@@ -5,6 +5,7 @@ import Timer from './Timer';
 import { useState } from 'react';
 import SettingsContext from './SettingsContext';
 import { TodoWrapper } from './TodoWrapper';
+import Quote from './Quote';
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
           setBreakMinutes,
           setWorkMinutes 
         }}>
+
+          <Quote />
 
           <h1 className='title'>BreakBoost</h1>
             <TodoWrapper />
