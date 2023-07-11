@@ -91,12 +91,12 @@ label {
 .todo-input {
   outline: none;
   background: none;
-  border: 1px solid #8758ff4f;
+  border: 1px solid #8758ffc0;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
   width: 300px;
-  color: #fff;
+  color: #f3efef;
 }
 
 .todo-input::placeholder{
@@ -104,7 +104,7 @@ label {
 }
 
 .todo-btn {
-  background: #8758ff4f;
+  background: #561ce7b2;
   color: #fff;
   border: none;
   padding: 0.55rem;
@@ -115,7 +115,7 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #8758ff4f;
+  background: #8758ffb4;
   padding: 0.75rem 1rem;
   margin-top: 1.5rem;
   border-radius: 5px;
