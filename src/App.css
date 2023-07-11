@@ -6,9 +6,12 @@
 
 html{
   height: 100%;
+  background-color: #8758ff4f;
+  
 }
 body{
   min-height: 100%;
+  background-attachment: fixed;
   background-image: url('./ringer/bb.jpeg');
   background-repeat: no-repeat;
   background-position: cover;
