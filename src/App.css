@@ -1,14 +1,25 @@
 :root{
   --red: #f54e4e;
   --green: #4aec8c;
+
 }
 
+html{
+  height: 100%;
+}
 body{
-  background-color: #30384b;
+  min-height: 100%;
+  background-image: url('./ringer/bb.jpeg');
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: cover;
+  backdrop-filter: grayscale(100%);
   color: #eee;
   display: flex;
   justify-content: center;
   align-items: center;
+  
+
 }
 
 main{
@@ -23,7 +34,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20%;
     gap: 10%;
 
   }
@@ -61,7 +71,7 @@ label {
 }
 
 .TodoWrapper {
-  background-color: #1A1A40;
+  background-color: transparent;
   box-sizing: border-box;
   margin-top: 30px;
   margin-bottom: 15px;
@@ -79,7 +89,7 @@ label {
 .todo-input {
   outline: none;
   background: none;
-  border: 1px solid #8758ff;
+  border: 1px solid #8758ff4f;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -92,7 +102,7 @@ label {
 }
 
 .todo-btn {
-  background: #8758ff;
+  background: #8758ff4f;
   color: #fff;
   border: none;
   padding: 0.55rem;
@@ -103,7 +113,7 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #8758ff;
+  background: #8758ff4f;
   padding: 0.75rem 1rem;
   margin-top: 1.5rem;
   border-radius: 5px;
@@ -159,15 +169,38 @@ label {
 }
 
 
-.quote {
-  position: absolute;
-  left: 30%;
-  top:20%;
+.quote{
+  text-align: center;
+  color: #ffffff50;
+  width: 30%;
+  margin-right: 4px;
+ 
+
+}
+
+
 
 
   @media (max-width: 39.9375em) {
-    position: absolute;
-    top: 10px;
-    left: 10%;
-  }
+    .quote{
+      width: 100%;
+  
+    }
+
+    #settings{
+      background-color:  #8758ff4f;
+    }
+
+}
+ 
+@media (min-width: 40em) {
+  .inspire{
+    width: 50%;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 400;
+  
+}
+
+
 }

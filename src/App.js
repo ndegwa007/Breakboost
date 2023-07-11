@@ -17,6 +17,16 @@ function App() {
 
    
     <main>
+            <div className='quote'>
+
+               
+                <Quote />
+
+            </div>
+
+
+            <TodoWrapper />
+  
        <SettingsContext.Provider value={{
           showSettings,
           setShowSettings,
@@ -27,15 +37,9 @@ function App() {
         }}>
 
         
-            <TodoWrapper />
           {showSettings ? <Settings /> : <Timer /> }
 
-          <div className='quote'>
-
-      <h1 className='title'>BreakBoost</h1>
-          <Quote />
-
-          </div>
+    
 
         
         </SettingsContext.Provider>
