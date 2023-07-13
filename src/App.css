@@ -36,7 +36,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200%;
+    width: 150%;
     gap: 20%;
 
   }
@@ -118,10 +118,7 @@ label {
 
   @media (min-width: 40em) {
    padding: 1rem;
-   position: absolute;
-   bottom: 30%;
-   left: 53%;
-   border-radius: 10px;
+   margin-left: 5px;
 
   }
 }
