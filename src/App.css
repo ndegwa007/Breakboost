@@ -16,7 +16,7 @@ body{
   background-repeat: no-repeat;
   background-position: cover;
   background-size: cover;
-  backdrop-filter: grayscale(100%);
+  backdrop-filter: grayscale(60%);
   color: #eee;
   display: flex;
   justify-content: center;
@@ -36,7 +36,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10%;
+    width: 200%;
+    gap: 20%;
 
   }
 }
@@ -70,6 +71,10 @@ label {
   margin-top: 20px;
   margin-bottom: 10px;
   text-transform: capitalize;
+
+  @media (max-width: 39.9375em) {
+    color:  #581bf1c0;
+  }
 }
 
 .TodoWrapper {
@@ -91,8 +96,8 @@ label {
 .todo-input {
   outline: none;
   background: none;
-  border: 1px solid #8758ffc0;
-  padding: 0.5rem 1rem;
+  border: 2.5px solid #581bf1c0;
+  padding: 1rem 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
   width: 300px;
@@ -100,7 +105,8 @@ label {
 }
 
 .todo-input::placeholder{
-  color: #ffffff4d;
+  color:#fff;
+  font-size: 15px;
 }
 
 .todo-btn {
@@ -109,6 +115,14 @@ label {
   border: none;
   padding: 0.55rem;
   cursor: pointer;
+  @media (min-width: 40em) {
+   padding: 1rem;
+   position: absolute;
+   bottom: 30%;
+   left: 53%;
+   border-radius: 10px;
+
+  }
 }
 
 .Todo {
@@ -168,14 +182,27 @@ label {
   label{
     margin-left: 20px;
   }
+
+  #back{
+    color:  #581bf1c0;
+  }
+
+
 }
 
 
 .quote{
-  text-align: center;
-  color: #ffffff50;
+  color:  #000;
   width: 30%;
   margin-right: 4px;
+
+  @media (min-width: 40em) {
+    text-align: start;
+    position: absolute;
+    bottom: 25%;
+    left: 5%;
+  }
+
  
 
 }
@@ -186,11 +213,13 @@ label {
   @media (max-width: 39.9375em) {
     .quote{
       width: 100%;
+      color: #fff;
+      text-align: center;
   
     }
 
     #settings{
-      background-color:  #8758ff4f;
+      background-color:  #581bf1c0;
     }
 
 }
