@@ -115,6 +115,7 @@ label {
   border: none;
   padding: 0.55rem;
   cursor: pointer;
+
   @media (min-width: 40em) {
    padding: 1rem;
    position: absolute;
@@ -173,6 +174,7 @@ label {
   .Timer{
     width: 80%;
     margin-left: 35px;
+    
   }
 
   .TodoWrapper{
@@ -212,9 +214,10 @@ label {
 
   @media (max-width: 39.9375em) {
     .quote{
-      width: 100%;
+      width: 80%;
       color: #fff;
       text-align: center;
+      margin-left: 10%;
   
     }
 
